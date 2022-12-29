@@ -15,3 +15,27 @@ m(b-a) &\=& (b-a)\inf_{x \in \[a,b\]}f(x)  \\
   &=& (b-a)\sup_{x \in \[a,b\]}f(x)  \\
   &=& M(b-a)
 \end{eqnarray}$$
+
+# Excercise 03
+
+$$\begin{eqnarray}
+\int_a^b f(x) dx
+&=& \inf_{P=\lbrace x_0, x_1, \dots, x_n\rbrace} \sum_{k=1}^n f(x) \sup_{x \in \[x_{n-1}, x_n\]} f(x) \\
+&\le& \inf_{P=\lbrace x_0, x_1, \dots, x_n\rbrace} \sum_{k=1}^n f(x) \sup_{x \in \[x_{n-1}, x_n\]} g(x) \\
+&=& \int_a^b g(x) dx
+\end{eqnarray}$$
+
+# Excercise 04
+
+We define $f:\[0,1\] \to \mathbb{R}$ by
+
+$$\begin{eqnarray}
+f(x) &=& \begin{cases}
+1 & (x \in \mathbb{Q} \cap \[0,1\]) \\
+-1 & (\rm{otherwise})
+\end{cases}
+\end{eqnarray}.
+$$
+
+$f$ is not Riemann integrable.
+Since $f^2(x)=1$ for all $x \in \[0,1\]$, $f^2$ is Riemann integrable.

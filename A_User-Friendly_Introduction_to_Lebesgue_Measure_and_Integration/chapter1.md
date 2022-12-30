@@ -46,13 +46,13 @@ Hence $B$ is Lebesgue measureable and $m(B)=0$ because $0 \le m(B) = m^{\*}(B) \
 
 # Exercise 14
 Let $\epsilon > 0$ be given.
-There exists a covering $I={I_k}$ of $A$ by closed intervals such that
+There exists a covering $I=\lbrace I_k\rbrace$ of $A$ by closed intervals such that
 
 $$\begin{eqnarray} 
 \sum_k v(I_k) \le m^{\*}(A) + \frac{\epsilon}{2} = \frac{\epsilon}{2}
 \end{eqnarray}$$
 
-There exists a covering $J={J_l}$ of $b$ by closed intervals such that
+There exists a covering $J=\lbrace J_l\rbrace$ of $b$ by closed intervals such that
 
 $$\begin{eqnarray} 
 \sum_l v(J_l) \le m^{\*}(B) + \frac{\epsilon}{2}

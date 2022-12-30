@@ -19,3 +19,31 @@ $$\begin{eqnarray}
 \end{eqnarray}$$
 
 Since $\epsilon$ was arbitrary, $m^*(A) = 0$
+
+# Excercise 14
+Let $\epsilon > 0$ be given.
+There exists a covering $I={I_k}$ of $A$ by closed intervals such that
+
+$$\begin{eqnarray} 
+\sum_k v(I_k) \le m^{\*}(A) + \frac{\epsilon}{2} = \frac{\epsilon}{2}
+\end{eqnarray}$$
+
+There exists a covering $J={J_l}$ of $b$ by closed intervals such that
+
+$$\begin{eqnarray} 
+\sum_l v(J_l) \le m^{\*}(B) + \frac{\epsilon}{2}
+\end{eqnarray}.$$
+
+Then, $I \cup J$ is a covering of $A \cup B$ by closed intervals and 
+
+$$
+\begin{eqnarray} 
+  m^{\*}(B) &\le& m^{\*}(A \cup B) \\
+  & \le &\sum_{H\in I\cup J} v(H) \\
+  &\le & \sum_k v(I_k) + \sum_l v(J_l) \\
+  &\le & \frac{\epsilon}{2} + m^{\*}(B) + \frac{\epsilon}{2} \\
+  &\le & m^{\*}(B) + \epsilon
+\end{eqnarray}.
+$$
+
+Since $\epsilon > 0$ is arbitrary, $m^{\*}(B) = m^{\*}(A \cup B)$

@@ -20,8 +20,8 @@ m(b-a) &\=& (b-a)\inf_{x \in \[a,b\]}f(x)  \\
 
 $$\begin{eqnarray}
 \int_a^b f(x) dx
-&=& \inf_{P=\lbrace x_0, x_1, \dots, x_n\rbrace} \sum_{k=1}^n (x_k-x_{k-1}) \sup_{x \in \[x_{n-1}, x_n\]} f(x) \\
-&\le& \inf_{P=\lbrace x_0, x_1, \dots, x_n\rbrace} \sum_{k=1}^n (x_k-x_{k-1})\sup_{x \in \[x_{n-1}, x_n\]} g(x) \\
+&=& \inf_{P=\lbrace x_0, x_1, \dots, x_n\rbrace} \sum_{k=1}^n (x_k-x_{k-1}) \sup_{x \in \[x_{k-1}, x_k\]} f(x) \\
+&\le& \inf_{P=\lbrace x_0, x_1, \dots, x_n\rbrace} \sum_{k=1}^n (x_k-x_{k-1})\sup_{x \in \[x_{k-1}, x_k\]} g(x) \\
 &=& \int_a^b g(x) dx
 \end{eqnarray}$$
 

@@ -27,7 +27,7 @@ Since $A$ is Lebesgue measurable and has Lebesugue measure 0, $m^{\*}(A) = m(A) 
 and there is an open set $G$ containing $A$ with $m^{\*}(G \setminus A) < \epsilon$.
 
 Since $G = (G \setminus A) \cup (G \cap A)$,
-we have $m^{\*}(G) \le m^{\*}(G \setminus A) \cup m^{\*}(G \cap A)$
+we have $m^{\*}(G) \le m^{\*}(G \setminus A) + m^{\*}(G \cap A)$
 
 Then,
 
@@ -35,7 +35,7 @@ $$
 \begin{align*}
 m^{\*}(G \setminus B) &\le m^{\*}(G) \\
 &\le m^{\*}(G \setminus A) + m^{\*}(G \cap A) \\
-&\le m^{\*}(G \setminus A) + m(A) \\
+&\le m^{\*}(G \setminus A) + m^{\*}(A) \\
 &\le m^{\*}(G \setminus A) \\
 &< \epsilon.
 \end{align*}

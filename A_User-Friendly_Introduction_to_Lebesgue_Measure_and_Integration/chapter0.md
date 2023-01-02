@@ -102,6 +102,21 @@ $$
 
 Since $\epsilon > 0$ was arbitrary, $f$ is Riemann integrable.
 
+# Exercise 10
+
+$f(x), h(x)$ and $g(x)$ are counterexamples, where
+
+$$
+\begin{align*}
+f(x) &= 0 (x \in [a,b]), \\
+h(x) &= \begin{cases}
+x = 1 (x \in \mathbb{Q} \cap [a, b]) \\
+x = 0 (x \notin \mathbb{Q} \cap [a, b])
+\end{cases}, \\
+g(x) &= 1 (x \in [a,b])
+\end{align*}
+$$
+
 # Exercise 13
 
 First, we will prove the following lemma

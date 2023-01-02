@@ -101,3 +101,76 @@ $$
 $$
 
 Since $\epsilon > 0$ was arbitrary, $f$ is Riemann integrable.
+
+# Exercise 13
+
+First, we will prove the following lemma
+
+## Lemma 0.4.13.0
+Let $P$ be a subset of $\mathbb{R}^n$ and both $f : P \to \mathbb{R}$ and $g : P \to \mathbb{R}$ be functions. Then,
+
+$$
+\begin{align*}
+\inf_{x \in P} f(x) + \inf_{x \in P} g(x) &\le \inf_{x \in P} (f(x) + g(x)), \\
+\sup_{x \in P} f(x) + \sup_{x \in P} g(x) &\ge \sup_{x \in P} (f(x) + g(x)).
+\end{align*}
+$$
+
+### The proof of Lemma 0.4.13.0
+
+According to the definition of the infimum and the supremum, we have
+
+$$
+\begin{align*}
+\inf_{x \in P} f(x)  &\le  f(y),\\
+\inf_{x \in P} g(x)  &\le  g(y),\\
+\sup_{x \in P} f(x)  &\ge  f(y),\\
+\sup_{x \in P} g(x)  &\ge  g(y)\\
+\end{align*}
+$$
+
+for each $y \in P$. Hence,
+
+$$
+\begin{align*}
+\inf_{x \in P} f(x) + \inf_{x \in P} g(x)  &\le  f(y) + g(y),\\
+\sup_{x \in P} f(x) + \sup_{x \in P} g(x)  &\ge  f(y) + g(y),\\
+\end{align*}
+$$
+
+for each $y \in P$.
+
+This implies that $\inf_{x \in P} f(x) + \inf_{x \in P} g(x)$ and $\sup_{x \in P} f(x) + \sup_{x \in P} g(x)$ are respectively a lower bound of $\lbrace f(x) + g(x) | x \in P\rbrace$ and a upper bound of $\lbrace f(x) + g(x) | x \in P\rbrace$. Therefore,
+
+$$
+\begin{align*}
+\inf_{x \in P} f(x) + \inf_{x \in P} g(x) &\le \inf_{x \in P} (f(x) + g(x)), \\
+\sup_{x \in P} f(x) + \sup_{x \in P} g(x) &\ge \sup_{x \in P} (f(x) + g(x)).
+\end{align*}
+$$
+
+## The proof of Exercise 13
+
+Let $P=\lbrace x_0, x_1, \dots, x_n \rbrace$ be a partition of $[a, b]$ and $f, g \in B[a, b]$. Then,
+
+$$
+\begin{align*}
+L(f, P) + L(g, P) &=
+\sum_{k=1}^n (x_k - x_{k-1}) \inf_{x \in [x_{k-1}, x_k]} f(x) +
+\sum_{k=1}^n (x_k - x_{k-1}) \inf_{x \in [x_{k-1}, x_k]} g(x) \\
+&= \sum_{k=1}^n (x_k - x_{k-1}) \left(\inf_{x \in [x_{k-1}, x_k]} f(x) + \inf_{x \in [x_{k-1}, x_k]} g(x) \right) \\
+&\le \sum_{k=1}^n (x_k - x_{k-1}) \inf_{x \in [x_{k-1}, x_k]} \left(f(x) + g(x) \right) \\
+&= L(f + g, P),
+\end{align*}
+$$
+
+$$
+\begin{align*}
+U(f, P) + U(g, P) &=
+\sum_{k=1}^n (x_k - x_{k-1}) \sup_{x \in [x_{k-1}, x_k]} f(x) +
+\sum_{k=1}^n (x_k - x_{k-1}) \sup_{x \in [x_{k-1}, x_k]} g(x) \\
+&= \sum_{k=1}^n (x_k - x_{k-1}) \left(\sup_{x \in [x_{k-1}, x_k]} f(x) + \sup_{x \in [x_{k-1}, x_k]} g(x) \right) \\
+&\ge \sum_{k=1}^n (x_k - x_{k-1}) \sup_{x \in [x_{k-1}, x_k]} \left(f(x) + g(x) \right) \\
+&= U(f + g, P),
+\end{align*}
+$$

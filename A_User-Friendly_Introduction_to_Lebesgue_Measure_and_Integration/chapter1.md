@@ -71,3 +71,34 @@ $$
 $$
 
 Since $\epsilon > 0$ is arbitrary, $m^{\*}(B) = m^{\*}(A \cup B)$
+
+# Exercise 19
+
+Since $E_1 \supseteq E_2 \supseteq E_3 \supseteq \dots$, we have
+
+$$
+\begin{align*}
+E_1 = \bigcup_{k=1}^{\infty}(E_k \setminus E_{k+1}) \cup \bigcap_{k=1}^{\infty}E_k
+\end{align*}.
+$$
+
+Since $\cup_{k=1}^{\infty}(E_k \setminus E_{k+1})$ and $\cap_{k=1}^{\infty}E_k$ are disjoint and $\lbrace E_k \setminus E_{k+1}\rbrace$ are pairwise disjoint,
+
+$$
+\begin{align*}
+m(E_1) &= \sum_{k=1}^{\infty}m(E_k \setminus E_{k+1}) + m\left(\bigcap_{k=1}^{\infty} E_k\right) \\
+&= \sum_{k=1}^{\infty}(m(E_k) - m(E_{k+1})) + m\left(\bigcap_{k=1}^{\infty} E_k\right) \\
+&= \lim_{n \to \infty} \sum_{k=1}^{n}(m(E_k) - m(E_{k+1})) + m\left(\bigcap_{k=1}^{\infty} E_k\right)\\
+&= \lim_{n \to \infty} (m(E_1) - m(E_{n+1})) + m\left(\bigcap_{k=1}^{\infty} E_k\right)\\
+&=  m(E_1) - \lim_{n \to \infty}m(E_{n+1}) + m\left(\bigcap_{k=1}^{\infty} E_k\right)\\
+&=  m(E_1) - \lim_{n \to \infty}m(E_{n}) + m\left(\bigcap_{k=1}^{\infty} E_k\right)\\
+\end{align*}.
+$$
+
+Therefore,
+
+$$
+\begin{align*}
+\lim_{n \to \infty}m(E_{n}) = m\left(\bigcap_{k=1}^{\infty} E_k\right)
+\end{align*}.
+$$

@@ -45,3 +45,16 @@ $$
 
 By part a), $\lbrace x \in [a, b] | f(x) \in I_n\rbrace$ is a measurable set for each $n \in \mathbb{N}$.
 By Theorem 1.2.5, $f^{-1}(G) = \bigcup_{n \in \mathbb{N}}\lbrace x \in [a, b] | f(x) \in I_n\rbrace$ is a measurable set.
+
+# Exercise 03
+
+Let $e$ be a real number.
+
+$$
+\begin{align*}
+\lbrace x \in [c, d] | f(x) > e \rbrace &= \lbrace x \in [a,b] | f(x) > e \text{ and } x \in [c, d]\rbrace \\
+&= \lbrace x \in [a, b] | f(x) > e\rbrace \cap[c, d].
+\end{align*}
+$$
+
+Since $\lbrace x \in [a, b] | f(x) > e\rbrace$ and $[c, d]$ are measurable sets, $f$ is measurable on $[c, d]$.

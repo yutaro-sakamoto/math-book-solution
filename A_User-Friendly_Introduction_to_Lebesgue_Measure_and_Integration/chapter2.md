@@ -58,3 +58,20 @@ $$
 $$
 
 Since $\lbrace x \in [a, b] | f(x) > e\rbrace$ and $[c, d]$ are measurable sets, $f$ is measurable on $[c, d]$.
+
+# Exercise 05
+Let $c$ be a real number.  
+Since $f$ be a strictly increasing function, there exists an inverse function $f^{-1}:[f(a),f(b)] \to [a, b]$ of $f$.  
+Then, 
+
+$$
+\begin{align*}
+\lbrace x \in [a, b] | f(x) \ge c \rbrace &= \begin{cases}
+\phi & (f(b) < c) \\
+[f^{-1}(c), b] & (f(a) \le c \le f(b) \\
+[a,b] & (c < f(a))
+\end{cases}.
+\end{align*}
+$$ 
+
+Therefore $f$ is a measurable function.

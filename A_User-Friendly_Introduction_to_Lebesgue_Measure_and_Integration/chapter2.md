@@ -75,3 +75,33 @@ $$
 $$ 
 
 Therefore $f$ is a measurable function.
+
+# Exercise 06
+
+## a)
+It is easy to show that $f(x) > g(x)$ if and only if there eixts $q \in \mathbb{Q}$ such that $f(x) > q > g(x)$.
+Hence,
+
+$$
+\begin{align*}
+\lbrace x \in I | f(x) > g(x) \rbrace &= \bigcup_{q\in \mathbb{Q}} \lbrace x \in I | f(x) > q > g(x) \rbrace \\
+&= \bigcup_{q\in \mathbb{Q}} (\lbrace x \in I | f(x) > q \rbrace \cap \lbrace x \in I | q > g(x) \rbrace).
+\end{align*}
+$$
+
+Therefore $\lbrace x \in I | f(x) > g(x) \rbrace$ is a measurable set.
+
+## b)
+
+Let $c$ be given.
+
+Then, 
+
+$$
+\begin{align*}
+\lbrace x \in I | h(x) > c \rbrace &= \lbrace x \in I | f(x) > c \text{ or } g(x) > c \rbrace \\
+&= \lbrace x \in I | f(x) > c \rbrace \cup \lbrace x \in I | g(x) > c \rbrace .
+\end{align*}
+$$
+
+Hence, $h$ is a measurable function.

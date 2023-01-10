@@ -105,3 +105,17 @@ $$
 $$
 
 Hence, $h$ is a measurable function.
+
+# Exercise 08
+
+We have
+
+$$
+\begin{align*}
+m(\lbrace x \in I | f(x) > 0 \rbrace) &= m(\bigcup_{n \in \mathbb{N}}\lbrace x \in I | f(x) > \frac{1}{n} \rbrace) \\
+&\le \sum_{n \in \mathbb{N}} m(\lbrace x \in I | f(x) > \frac{1}{n}\rbrace)\\
+&= \sum_{n \in \mathbb{N}} m(E_n).
+\end{align*}
+$$
+
+If $E_n$ has zero measure for each $n \in \mathbb{N}$, then we have $m(\lbrace x \in I | f(x) > 0 \rbrace) \le 0$. This is a contradiciton. Thefore, $E_n$ has positive measure for some $n \in \mathbb{N}$.

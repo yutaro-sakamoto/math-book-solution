@@ -119,3 +119,24 @@ m(\lbrace x \in I | f(x) > 0 \rbrace) &= m(\bigcup_{n \in \mathbb{N}}\lbrace x \
 $$
 
 If $E_n$ has zero measure for each $n \in \mathbb{N}$, then we have $m(\lbrace x \in I | f(x) > 0 \rbrace) \le 0$. This is a contradiciton. Thefore, $E_n$ has positive measure for some $n \in \mathbb{N}$.
+
+# Exercise 09
+
+Let $c$ be given.
+
+Then,
+
+$$
+\begin{align*}
+\lbrace x \in I | f(x)^2 \le c \rbrace &= \begin{cases}
+\phi &(c < 0) \\
+\lbrace x \in I | -\sqrt{c} \le f(x) \le \sqrt{c}\rbrace &(c \ge 0)
+\end{cases} \\
+&= \begin{cases}
+\phi &(c < 0) \\
+\lbrace x \in I | -\sqrt{c} \le f(x) \rbrace \cap \lbrace x \in I | f(x) \le \sqrt{c}\rbrace&(c \ge 0)
+\end{cases}.
+\end{align*}
+$$
+
+Therefore $f^2$ is measurable on the interval $I$.

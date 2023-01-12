@@ -140,3 +140,20 @@ $$
 $$
 
 Therefore $f^2$ is measurable on the interval $I$.
+
+# Exercise 10
+
+Since
+
+$$
+\begin{align*}
+\lbrace x \in I | 1/g(x) > c\rbrace &= \begin{cases}
+\lbrace x \in I | 0 < g(x) < 1/c \rbrace &(c > 0) \\
+\lbrace x \in I | 0 < g(x) \rbrace &(c = 0) \\
+\lbrace x \in I | g(x) < 1/c \rbrace \cup \lbrace x \in I | 0 < g(x) \rbrace&(c < 0) \\
+\end{cases},
+\end{align*}
+$$
+
+$1/g$ is measurable on $I$.
+According to the part (ii) of Theorem 2.1.6, $f/g$ is measurable on $I$.

@@ -157,3 +157,26 @@ $$
 
 $1/g$ is measurable on $I$.
 According to the part (ii) of Theorem 2.1.6, $f/g$ is measurable on $I$.
+
+# Exercise 11
+
+We assume that $P = \lbrace E_1, E_2, \dots, E_n\rbrace$.
+By [Lemma 0.4.13.0 in Exercise 13 of Chapter 0](https://github.com/yutaro-sakamoto/math-book-solution/blob/main/A_User-Friendly_Introduction_to_Lebesgue_Measure_and_Integration/chapter0.md#lemma-04130),
+
+$$
+\begin{align*}
+U[f + g, P] &= \sum_{E_i \in P}m(E_i) \sup_{x \in E_i} (f(x) + g(x)) \\
+&\le \sum_{E_i \in P}m(E_i) \left(\sup_{x \in E_i} f(x) + \sup_{x \in E_i}g(x)\right) \\
+&=\sum_{E_i \in P}m(E_i) \sup_{x \in E_i} f(x) + \sum_{E_i \in P}m(E_i)\sup_{x \in E_i}g(x) \\
+&= U[f, P] + U[g, P]
+\end{align*}
+$$
+
+$$
+\begin{align*}
+L[f + g, P] &= \sum_{E_i \in P}m(E_i) \inf_{x \in E_i} (f(x) + g(x)) \\
+&\ge \sum_{E_i \in P}m(E_i) \left(\inf_{x \in E_i} f(x) + \inf_{x \in E_i}g(x)\right) \\
+&=\sum_{E_i \in P}m(E_i) \inf_{x \in E_i} f(x) + \sum_{E_i \in P}m(E_i)\inf_{x \in E_i}g(x) \\
+&= L[f, P] + L[g, P]
+\end{align*}
+$$

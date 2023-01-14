@@ -180,3 +180,31 @@ L[f + g, P] &= \sum_{E_i \in P}m(E_i) \inf_{x \in E_i} (f(x) + g(x)) \\
 &= L[f, P] + L[g, P]
 \end{align*}
 $$
+
+# Exercise 12
+
+We assume that $P_1 = \lbrace E_1, E_2, \dots, E_n\rbrace$.
+Since $P_2$ is a refinement of $P_1$, assume that $E_i = F_{i1}\cup F_{i2} \cup \dots F_{ij_i}$ and $P_2 = \lbrace F_{ij} | 1 \le i \le n$, $1 \le j \le j_i \rbrace$.
+Then,
+
+$$
+\begin{align*}
+U[f, P_2] &= \sum_{F_{ij} \in P_2}m(F_{ij}) \sup_{x \in F_{ij}} f(x) \\
+&= \sum_{i=1}^n \sum_{j=1}^{j_i}m(F_{ij})  \sup_{x \in F_{ij}} f(x) \\
+&\le \sum_{i=1}^n \sum_{j=1}^{j_i}m(F_{ij})  \sup_{x \in E_i} f(x) \\
+&= \sum_{i=1}^n \sup_{x \in E_i} f(x)\sum_{j=1}^{j_i}m(F_{ij}) \\
+&= \sum_{i=1}^n \sup_{x \in E_i} f(x)m(E_i) \\
+&=U[f, P_1].
+\end{align*}
+$$
+
+$$
+\begin{align*}
+L[f, P_2] &= \sum_{F_{ij} \in P_2}m(F_{ij}) \inf_{x \in F_{ij}} f(x) \\
+&= \sum_{i=1}^n \sum_{j=1}^{j_i}m(F_{ij})  \inf_{x \in F_{ij}} f(x) \\
+&\ge \sum_{i=1}^n \sum_{j=1}^{j_i}m(F_{ij})  \inf_{x \in E_i} f(x) \\
+&= \sum_{i=1}^n \inf_{x \in E_i} f(x)\sum_{j=1}^{j_i}m(F_{ij}) \\
+&= \sum_{i=1}^n \inf_{x \in E_i} f(x)m(E_i) \\
+&=L[f, P_1].
+\end{align*}
+$$

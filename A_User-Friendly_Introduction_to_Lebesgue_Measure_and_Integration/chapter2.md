@@ -208,3 +208,68 @@ L[f, P_2] &= \sum_{F_{ij} \in P_2}m(F_{ij}) \inf_{x \in F_{ij}} f(x) \\
 &=L[f, P_1].
 \end{align*}
 $$
+
+# Exercise 13
+
+Let $\epsilon > 0$ is given.
+According to the property of infimums, there exists partisions $P_1$ and $P_2$ so that
+
+$$
+\begin{align*}
+U[f, P_1] &\le \inf_P U[f, P] + \frac{\epsilon}{2} \\
+U[g, P_2] &\le \inf_P U[g, P] + \frac{\epsilon}{2} \\
+\end{align*}
+$$
+
+Then, 
+
+$$
+\begin{align*} 
+U[f, P_1] + U[g, P_2] &\le \inf_P U[f, P] + \inf_PU[g, P] + \epsilon \notag \\
+&= \int_a^b f + \int_a^b g + \epsilon \tag{1}
+\end{align*}
+$$
+
+Assume that $P_3$ is a common refinement of $P_1$ and $P_2$.Hence,
+
+$$
+\begin{align*}
+\overline{\int_a^b} (f + g) &= \inf_P U[f + g, P]\\
+&\le U[f + g, P_3] \\
+&\le U[f, P_3] + U[g, P_3] \text{  (By Exercise 11)}\\
+&\le U[f, P_1] + U[g, P_2] \text{  (}P_3\text{ is a common refinement of }P_1 \text{ and}P_2\text{)}\\
+&\le \int_a^b f + \int_a^b g + \epsilon. \text{ (By (1))}
+\end{align*}
+$$
+
+Since $\epsilon > 0$ was arbitrary, we have
+
+$$
+\begin{align*}
+\overline{\int_a^b} (f + g) &\le \int_a^b f + \int_a^b g.
+\end{align*}
+$$
+
+In a similar manner, we have 
+
+$$
+\begin{align*}
+\int_a^b f + \int_a^b g \le \underline{\int_a^b} (f + g).
+\end{align*}
+$$
+
+Therefore,
+
+$$
+\begin{align*}
+\overline{\int_a^b} (f + g) = \underline{\int_a^b} (f + g) = \int_a^b f + \int_a^b g.
+\end{align*}
+$$
+
+Finally, $f + g$ is Lebesgue integrable and 
+
+$$
+\begin{align*}
+\int_a^b (f + g)= \int_a^b f + \int_a^b g.
+\end{align*}
+$$

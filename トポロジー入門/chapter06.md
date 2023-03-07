@@ -37,3 +37,20 @@ h^{-1}\left(\bigcup_{j\in J}U_j\times V_j\right) &=
 
 $f, g$ は連続だから、各 $j$ に対し、 $f^{-1}(U_j), g^{-1}(V_j)$ は開集合。よって、上記の集合は開集合。以上より $h$ は連続。
 $h^{-1}$ が連続であることも同様に示せる。よって、 $h$ は同相写像であることを示せた。
+
+# 6.6
+
+## 問題 (a)
+
+$\mathscr{O}$ を $X \times Y$ の積位相、 $\mathscr{P}$ を $\pi_X, \pi_Y$ が連続になるような位相とする。
+$\mathscr{O} \subset \mathscr{P}$ を示す。
+
+$\bigcup_{j \in J} (U_j \times V_j)$ を $\mathscr{O}$ の任意の開集合とする。 ただし、各 $j \in J$ について $U_j, V_j$ はそれぞれ $X, Y$ の開集合とする。
+このとき、 $\pi_X, \pi_Y$ は $\mathscr{P}$ に関して連続だから、 各 $j \in J$ について $\pi_X^{-1}(U_j), \pi_Y^{-1}(V_j)$ は共に $X \times Y$ の $\mathscr{P}$ の開集合。よって、
+
+$$\begin{align*}
+\bigcup_{j \in J} (U_j \times V_j) &= \bigcup_{j \in J} ((X \times V_j) \cap (U_j \times Y)) \\
+&= \bigcup_{j \in J} (\pi_Y^{-1}(V_j) \cap \pi_X^{-1}(U_j))
+\end{align*}$$
+
+は $\mathscr{P}$ の開集合。よって、 $\mathscr{O} \subset \mathscr{P}$ を示した。

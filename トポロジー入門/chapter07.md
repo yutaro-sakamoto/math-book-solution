@@ -40,3 +40,20 @@ $\bigcup_{k \in K} C_k^c = X$ となる。よって $\bigcap_{k\in K} C_k = \phi
 したがって、ある有限部分集合 $K \subset J$ が存在して、
 $\bigcap_{k \in K} U_k^c = \phi$ となる。よって $\bigcup_{k\in K} U_k = X$ となり、 $X$ はコンパクトである。
 
+## 問題 (c)
+
+$s, t \in \mathbb{R}$ が $s < t$ を満たすとき、 $[s, t) \in \mathscr{F}$ である。
+$\lbrace [1, 2)\rbrace \cup \lbrace [0, 1-1/n) | n = 2, 3, \dots\rbrace$ は $[0, 1]$ の開被覆である。
+この開被覆の任意の有限部分集合 $\mathscr{E}$ が $[0, 1]$ を被覆するかを考える。
+$\mathscr{E}$ が1を被覆するには $[1, 2)$ を含む必要がある。
+したがって、
+
+$$\begin{align*}
+\mathscr{E} = \lbrace [1, 2) \rbrace \cup \lbrace [0, 1-1/n_i) | i = 1, 2, \dots, N\rbrace
+\end{align*}$$
+
+とおく。
+ただし各 $n_i$ は2以上の自然数である。
+$M = \max \lbrace n_1, n_2, \dots, n_N\rbrace$ とおく。
+このとき $[0, 1]$ の空でない部分集合である $[1-1/M, 1)$ は $\mathscr{E}$ により被覆されないことがわかる。
+以上より、位相 $\mathscr{F}$ において、 $[0, 1]$ はコンパクトではない。

@@ -24,3 +24,11 @@ $$\begin{align*}
 を得る。これは、 $[g*\overline{f}]\in Z(\pi(X, x))$ を意味する。
 
 以上より、 $u_f=u_g$ の必要十分条件は $[g*\overline{f}]\in Z(\pi(X, x))$ である。
+
+# 15.11
+
+## (a)
+
+$\varphi : S^1 \to D^2$ を包含写像とする。このとき $\varphi$ は単射である。
+また、 $\pi(S^1, x) \simeq \mathbb{Z}, \pi(D^2, x) = \{1\}$ より、 
+$\varphi_* : \pi(S^1, x) \to \pi(D^2, x)$　は単射ではない。

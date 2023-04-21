@@ -41,3 +41,25 @@ $f$ を $x \in S_1$ を基点とする閉道とすると、 $f$ は定値道で�
 なぜなら、 $z \in f([0, 1])$ を任意に取ると、 $S_1$ は離散位相が定義されているから当然、 $f^{-1}(\lbrace z\rbrace), f^{-1}(S_1 - \lbrace z\rbrace)$ はそれぞれ $[0, 1]$ の開集合となる。 $f^{-1}(\lbrace z\rbrace)$ 空集合ではなく、 $f^{-1}(\lbrace z\rbrace) \cup f^{-1}(S_1 - \lbrace z\rbrace) = [0, 1]$ だから、 $[0, 1]$ の連結性より $f^{-1}(\lbrace z\rbrace) = [0, 1]$ を得る。これは $f$ が定値道であることを意味する。
 
 よって、 $\pi(S_1, x)$ は唯一つの元からなる集合である。 一方で前問の仮定より $\pi(S_2, x) \simeq \mathbb{Z}$ である。以上より、 $\varphi$ は全単射連続写像だが $\varphi_* : \pi(S_1, x) \to \pi(S_2, x)$ は全射ではない。
+
+# 15.16
+
+## (a)
+
+$r_\star : \pi(X,a) \to \pi(A, a)$ は全射準同型写像であり、 $i_\star : \pi(X, a) \to \pi(A, a)$ は単射準同型写像であることを示す。
+
+$A$ は $X$ の弱レトラクトだから、 $F: ri \simeq 1 : A \to A$ である。
+$f : [0, 1] \to A$ を次のように定義する。
+
+$$\begin{align*}
+f(t) = F(x, t)
+\end{align*}$$
+
+定理15.12より、
+
+$$\begin{align*}
+1_\star &= u_f(ri)_\star\\
+&= u_fr_\star i_\star
+\end{align*}$$
+
+を得る。 $u_f$ と $1_\star$ は共に同型写像だから $r_\star i_\star$ も同型写像である。 したがって、 $r_\star$ は全射準同型写像であり、 $i_\star$ は単射準同型写像である。

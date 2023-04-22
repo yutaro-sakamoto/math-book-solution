@@ -63,3 +63,52 @@ $$\begin{align*}
 \end{align*}$$
 
 を得る。 $u_f$ と $1_\star$ は共に同型写像だから $r_\star i_\star$ も同型写像である。 したがって、 $r_\star$ は全射準同型写像であり、 $i_\star$ は単射準同型写像である。
+
+# 15.18
+
+## (a)
+
+$X, Y$ をそれぞれ単連結位相空間とする。 $X \times Y$ が単連結であることを示す。
+定理15.17より道連結だから、ある $(x_0, y_0) \in X \times Y$ について
+$\pi(X\times Y, (x_0, y_0)) =\lbrace 1\rbrace$ を示せば良い。
+
+$(x_0, y_0) \in X \times Y$ を任意にとり、 $f, g \in \pi(X \times Y, (x_0, y_0))$ を任意に取る。
+$f \thicksim g$ を示せば良い。
+$p_X: X\times Y \to X, p_Y: X\times Y \to Y$ を射影とする。
+$p_Xf, p_Xg$ はそれぞれ $x_0$ を基点とする $X$ の閉道であり、 $p_Yf, p_Yg$ は それぞれ $y_0$ を基点とする $Y$ の閉道である。
+$X, Y$ はそれぞれ単連結位相空間だから、 $p_Xf \thicksim p_Xg$ と $p_Yf \thicksim p_Yg$ を得る。
+これらの同値は、それぞれ $F: [0,1] \times [0,1] \to X, G: [0,1] \times [0,1] \to Y$ によって与えられるとする。
+連続写像 $H: [0, 1] \times [0, 1] \to X \times Y$ を次のように定義する。
+
+$$\begin{align*}
+H(t, s) = (F(t, s), G(t, s))
+\end{align*}$$
+
+このとき、下記が成り立つ。
+
+$$\begin{align*}
+H(t, 0) &= (F(t, 0), G(t, 0))\\
+&= (p_Xf(t), p_Yf(t))\\
+&= f(t)
+\end{align*}$$
+
+$$\begin{align*}
+H(t, 1) &= (F(t, 1), G(t, 1))\\
+&= (p_Xg(t), p_Yg(t))\\
+&= g(t)
+\end{align*}$$
+
+$$\begin{align*}
+H(0, s) &= (F(0, s), G(0, s))\\
+&= (p_X((x_0, y_0)), p_Y((x_0, y_0)))\\
+&= (x_0, y_0)
+\end{align*}$$
+
+
+$$\begin{align*}
+H(1, s) &= (F(1, s), G(1, s))\\
+&= (p_X((x_0, y_0)), p_Y((x_0, y_0)))\\
+&= (x_0, y_0)
+\end{align*}$$
+
+以上より、 $H$ により $f\thicksim g$ が与えられ、 $\pi(X\times Y, (x_0, y_0)) =\lbrace 1\rbrace$ である。

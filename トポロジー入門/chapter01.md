@@ -24,3 +24,15 @@ d(b, c) &= n + 1
 \end{align*}$$
 
 $n > 2$ より $d(a, b) + d(a, c) < d(b, c)$ だから、 $\mathbb{R}^n$ の距離を定義しない。
+
+## (d)
+
+$$\begin{align*} 
+d_r(a,b) = 0 \iff rd(a,b)=0 \iff d(a,b)=0 \iff a = b
+\end{align*}$$
+
+$$\begin{align*} 
+d_r(a,b) + d_r(a, c) = r(d(a, b) + d(a, c)) \geq rd(b, c) = d_r(b, c)
+\end{align*}$$
+
+以上より $d_r$ は距離となる。

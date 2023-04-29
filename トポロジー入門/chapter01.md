@@ -36,3 +36,22 @@ d_r(a,b) + d_r(a, c) = r(d(a, b) + d(a, c)) \geq rd(b, c) = d_r(b, c)
 \end{align*}$$
 
 以上より $d_r$ は距離となる。
+
+
+## (e)
+
+
+$$\begin{align*} 
+&d'(a,b) = 0\\
+\iff& \frac{d(a, b)}{1 + d(a, b)} = 0\\
+\iff& d(a,b) = 0\\
+\iff& a=b
+\end{align*}$$
+
+$$\begin{align*} 
+d'(a, b) + d'(a, c) - d'(b, c) &= \frac{d(a, b)}{1+d(a, b)} + \frac{d(a, c)}{1 + d(a, c)} - \frac{d(b, c)}{1 + d(b, c)}\\
+&=\frac{d(a,b)d(a, c)d(b, c) +2d(a,b)d(a,c)+ d(a, b) + d(a, c) - d(b, c)}{(1+d(a,b))(1+d(a,c))(1+d(b,c))}\\
+&\geq 0
+\end{align*}$$
+
+最後の変形では $d(a, b) + d(a, c) \geq d(b, c)$ を使った。以上より、 $d'$ は距離である。

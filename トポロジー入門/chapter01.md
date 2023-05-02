@@ -55,3 +55,19 @@ d'(a, b) + d'(a, c) - d'(b, c) &= \frac{d(a, b)}{1+d(a, b)} + \frac{d(a, c)}{1 +
 \end{align*}$$
 
 最後の変形では $d(a, b) + d(a, c) \geq d(b, c)$ を使った。以上より、 $d'$ は距離である。
+
+# 1.8
+
+## (a)
+
+$y \in B_\epsilon(x)$ を任意に取る。さらに、 $\epsilon'=d(x,y)$ とおく。 $\epsilon'<\epsilon$ である。 $B_{\epsilon-\epsilon'}(y) \subset B_\epsilon(x)$ を示せば十分である。
+
+$y' \in B_{\epsilon-\epsilon'}(y)$ を任意に取る。このとき、
+
+$$\begin{align*} 
+d(x, y') &\leq d(x, y) + d(y, y')\\
+&< \epsilon' + (\epsilon - \epsilon')\\
+&= \epsilon
+\end{align*}$$
+
+よって、 $y' \in B_\epsilon(x)$ である。これは $B_{\epsilon-\epsilon'}(y) \subset B_\epsilon(x)$ を意味する。

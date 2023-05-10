@@ -32,3 +32,27 @@ $X$ には自明位相が与えられているとする。
 $A$ を $X$ の任意の空でない部分集合とする。
 $X$ の開集合は $\phi$ と $X$ に限るから、$A$ の開集合は $\phi$ と $A$ に限る。
 $A$ の空でない部分集合は $A$ だけだから、 $A$ は連結である。
+
+# 問題(e)
+
+$Y$ を少なくとも2点を有する離散空間する。
+
+$a, b \in Y$ を異なる点とする。
+$X$ が連結でないとき、空でない互いに素な開集合 $A, B$ があって $A \cup B = X$ となる。このとき、 $f: X \to Y$ を次のように定義する。
+
+$$\begin{align*}
+f(x) = \begin{cases}
+a & (x \in A)\\
+b & (x \in B)
+\end{cases}
+\end{align*}$$
+
+このとき $f$ は連続写像であるが定値写像ではない。
+
+次に、 $X$ は連結空間と仮定する。 $f: X \to Y$ を連続写像とする。
+$f(X)$ が異なる2点 $a, b$ を含む場合を考える。
+このとき、 $\lbrace a\rbrace, Y \setminus \lbrace a\rbrace$ はともに $Y$ の空でない開集合で、
+$f^{-1}(\lbrace a\rbrace), f^{-1}(Y \setminus \lbrace a\rbrace)$ は空でない互いに素な開集合で、
+$f^{-1}(\lbrace a\rbrace) \cup f^{-1}(Y \setminus \lbrace a\rbrace) = X$ となる。
+これは $X$ が連結であることに矛盾する。
+よって、 $f$ は定値写像である。

@@ -56,6 +56,39 @@ d'(a, b) + d'(a, c) - d'(b, c) &= \frac{d(a, b)}{1+d(a, b)} + \frac{d(a, c)}{1 +
 
 最後の変形では $d(a, b) + d(a, c) \geq d(b, c)$ を使った。以上より、 $d'$ は距離である。
 
+# 1.6
+
+## (a)
+
+$f$ は距離 $d$ に関して連続と仮定する。
+$\epsilon > 0$ を任意に選ぶ。
+$f$ は距離 $d$ に関して連続だから、ある $\delta > 0$ が存在して、 $x, y \in A$ が
+$d(x, y) < \delta$ を満たすとき、 $d(f(x), f(y)) < \epsilon$ である。
+$\delta'=r\delta$ とおくと、 
+
+$$\begin{align*}
+d_r(x, y) < \delta' \iff rd(x, y) < r\delta \iff d(x, y) < \delta \implies d(f(a), f(b)) < \epsilon
+\end{align*}$$
+
+を得る。
+以上より、$f$ は距離 $d_r$ に関して連続である。
+
+次に、$f$ は距離 $d_r$ に関して連続だとする。
+$\epsilon_r > 0$ を任意に選ぶ。
+$f$ は距離 $d_r$ に関して連続だから、ある $\delta_r > 0$ が存在して、 $x, y \in A$ が
+$d_r(x, y) < \delta_r$ を満たすとき、 $d(f(x), f(y)) < \epsilon_r$ である。
+$\delta''=\delta_r/r$ とおくと、 
+
+$$\begin{align*}
+d(x, y) < \delta'' \iff d(x, y) < \delta_r/r \iff rd(x, y) < \delta_r \iff d_r(x, y) < \delta_r \implies d(f(a), f(b)) < \epsilon_r
+\end{align*}$$
+
+を得る。
+以上より、 $f$ は距離 $d$ に関して連続である。
+
+以上より「 $f$ は距離 $d$ に関して連続である」の必要十分条件は
+「 $f$ は距離 $d_r$ に関して連続である」である
+
 # 1.8
 
 ## (a)

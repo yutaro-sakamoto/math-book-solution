@@ -87,6 +87,30 @@ G(1, s) = F(f(1), s)= F(x_0, s) = x_0
 
 を得る。以上より、 $G:\varphi f \sim \psi f$ となり、 $\varphi_{\star} = \psi_{\star}$ が示された。
 
+
+## (e)
+
+まず $i_{\star} : \pi(A,a) \to \pi(X,a)$ が単射準同型であることを示す。
+$i_{\star}[f] = [\epsilon_a] \in \pi(X,a)$ のとき、 $[f] = [\epsilon_a] \in \pi(A,a)$ であること示せば良い。
+
+$$\begin{align*}
+i_{\star}[f] &= [\epsilon_a] \\
+r_{\star}i_{\star}[f] &= r_{\star}[\epsilon_a]\\
+[rif] &= [r\epsilon_a] \\
+[f] &= [\epsilon_{r(a)}] \\
+[f] &= [\epsilon_a]
+\end{align*}$$
+
+以上より、 $i_{\star} : \pi(A,a) \to \pi(X,a)$ が単射準同型であることが示された。
+
+次に、 $r_{\star} : \pi(X,a) \to \pi(A, a)$ が全射準同型であることを示す。
+$[g] \in \pi(A,a)$ を任意に選ぶ。 $i_{\star}[g] \in \pi(X,a)$ に対して、
+
+$$\begin{align*}
+r_{\star}i_{\star}[g] = [rig] = [g]
+\end{align*}$$
+
+以上より、 $r_{\star}$ は全射準同型である。
 # 15.16
 
 ## (a)

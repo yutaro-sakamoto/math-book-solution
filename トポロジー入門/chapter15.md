@@ -56,6 +56,36 @@ $$\begin{align*}
 
 よって $\varphi_{\star}u_f = u_{\varphi f}\varphi_{\star}$
 
+## (d)
+$F: \varphi \sim \psi (\rm{rel}\ \{x_0\})$ とする。
+$[f] \in \pi(X, x_0)$ とする。
+$\varphi_{\star}[f] = [\varphi f], \psi_{\star}[f] = [\psi f]$ より、
+$\varphi f \sim \psi f$ を示せば良い。
+$G : I \times I \to X$ を次のように定義する。
+
+$$\begin{align*}
+G(t, s) = F(f(t), s)
+\end{align*}$$
+
+このとき、
+
+$$\begin{align*}
+G(t, 0) = F(f(t), 0)= \varphi(f(t))
+\end{align*}$$
+
+$$\begin{align*}
+G(t, 1) = F(f(t), 1)= \psi(f(t))
+\end{align*}$$
+
+$$\begin{align*}
+G(0, s) = F(f(0), s)= F(x_0, s) = x_0
+\end{align*}$$
+
+$$\begin{align*}
+G(1, s) = F(f(1), s)= F(x_0, s) = x_0
+\end{align*}$$
+
+を得る。以上より、 $G:\varphi f \sim \psi f$ となり、 $\varphi_{\star} = \psi_{\star}$ が示された。
 
 # 15.16
 

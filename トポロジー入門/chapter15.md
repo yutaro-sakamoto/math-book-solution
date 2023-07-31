@@ -111,6 +111,32 @@ r_{\star}i_{\star}[g] = [rig] = [g]
 \end{align*}$$
 
 以上より、 $r_{\star}$ は全射準同型である。
+
+## (g)
+(e) における記号を同じ意味で使用する。
+$[f] \in \pi(X, a)$ を任意の元とする。
+$F : ir \sim 1 (\rm{rel}\ A)$ とする。( $A$ は $X$ の強変形レトラクトだからこのように仮定して良い)
+$G : I \times I \to X$ を次のように定義する。
+
+$$\begin{align*}
+G(t, s) = F(f(t), s)
+\end{align*}$$
+
+このとき、
+
+$$\begin{align*}
+G(t, 0) = F(f(t), 0) = irf(t)\\
+G(t, 1) = F(f(t), 1) = f(t)\\
+G(0, s) = F(f(0), s) = F(a, s) = a\\
+G(a, s) = F(f(a), s) = F(a, s) = a
+\end{align*}$$
+
+以上より、 $G : irf \sim f$ を得る。
+したがって、 $i_{\star}r_{\star}[f] = [irf] = [f]$ である。
+また $r_{\star}i_{\star}[g] = [rig] = [g]$ である。
+$r, i$ は互いに逆写像であり、 $r, i$ がともに準同型であることは (e) で示した。
+以上より, $i_{\star}, r_{\star}$ は共に同型写像である。
+
 # 15.16
 
 ## (a)

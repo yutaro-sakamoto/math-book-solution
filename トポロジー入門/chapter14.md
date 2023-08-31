@@ -57,3 +57,29 @@ $$
 以上より、 $(f\star g) \star h \neq f\star(g \star h)$ である。
 
 また、 $f = g = h = \epsilon_x$ のとき、 $f(1) = g(0) = g(1) = h(0) = x$ であり、 $(f\star g)\star h = f\star(g\star h) = \epsilon_x$
+
+## (h)
+$F : I \times I \to I$ を次のように定義する。
+
+$$\begin{align*}
+F(t, s) &= (1 - s)\overline{f}(t) + sf(h(t))
+\end{align*}$$
+
+また任意の $t \in I$ について $0 \leq \overline{f}(t) \leq 1$ かつ
+$0 \leq f(h(t)) \leq 1$ であるから、
+任意の $s, t \in I$ について $0 \leq F(t, s) \leq 1$ であり、 $F$ は確かに定義される。
+
+ここで
+
+$$\begin{align*}
+F(0, s) &= (1 - s)\overline{f}(0) + sf(h(0))\\
+&= (1 - s)f(1) + sf(1)\\
+&= f(1)\\
+F(1, s) &= (1 - s)\overline{f}(1) + sf(h(1))\\
+&= (1 - s)f(0) + sf(0)\\
+&= f(0)\\
+F(t, 0) &= \overline{f}(t)\\
+F(t, 1) &= f(h(t))\\
+\end{align*}$$
+
+であるから、 $F$ は $\overline{f} \sim fh$ を与える。

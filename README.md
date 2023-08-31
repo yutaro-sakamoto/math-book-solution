@@ -19,5 +19,7 @@
   * [Chapter 09](トポロジー入門/chapter09.md)
   * [Chapter 10](トポロジー入門/chapter10.md)
   * [Chapter 12](トポロジー入門/chapter12.md)
+  * [Chapter 13](トポロジー入門/chapter13.md)
   * [Chapter 14](トポロジー入門/chapter14.md)
   * [Chapter 15](トポロジー入門/chapter15.md)
+  * [Chapter 29](トポロジー入門/chapter29.md)

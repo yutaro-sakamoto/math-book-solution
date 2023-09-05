@@ -58,6 +58,31 @@ $$
 
 また、 $f = g = h = \epsilon_x$ のとき、 $f(1) = g(0) = g(1) = h(0) = x$ であり、 $(f\star g)\star h = f\star(g\star h) = \epsilon_x$
 
+## (b)
+
+$$
+(\epsilon_{f(0)} \ast f)(t) = \begin{cases}
+f(0) &(0 \le t \le 1/2) \\
+f(2t-1) &(1/2 \le t \le 1) \\
+\end{cases}\\
+(f \ast \epsilon_{f(1)})(t) = \begin{cases}
+f(2t) &(0 \le t \le 1/2) \\
+f(1) &(1/2 \le t \le 1) \\
+\end{cases}
+$$
+
+である。このとき $F: I \times I \to X$ を次のように定義する。
+
+$$
+F(t, s) = \begin{cases}
+f(0) & (0 \le t \le (1-s)/2)\\
+f(2t - (1-s)/2) & ((1-s)/2 \le t \le (2-s)/2) \\
+f(1) & ((2-s)/2 \le t \le 1)
+\end{cases}
+$$
+
+このとき、 $F$ は $\epsilon_{f(0)} \ast f \sim f \ast \epsilon_{f(1)}$ を与える。
+
 ## (h)
 $F : I \times I \to I$ を次のように定義する。
 

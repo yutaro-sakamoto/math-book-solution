@@ -208,8 +208,87 @@ H(1, s) &= (F(1, s), G(1, s))\\
 
 以上より、 $H$ により $f\thicksim g$ が与えられ、 $\pi(X\times Y, (x_0, y_0)) =\lbrace 1\rbrace$ である。
 
-## (e)
+## (d)
 
+$a,b \in G$ に対して $ab = \mu(a,b), a^{-1}=\nu(a)$ と書くことにする。
+また、 $p: I \to I, q: I \to I$ を次のように定義される連続写像とする。
+
+$$\begin{align*}
+p(t) = \begin{cases}
+2t & (0 \leq t \leq \frac{1}{2})\\
+1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+$$\begin{align*}
+q(t) = \begin{cases}
+0 & (0 \leq t \leq \frac{1}{2})\\
+2t-1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+ここで
+
+$$\begin{align*}
+(f\ast h)(t) &= \begin{cases}
+f(2t) & (0 \leq t \leq \frac{1}{2})\\
+h(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases} \\
+&= \begin{cases}
+f(2t)h(0) & (0 \leq t \leq \frac{1}{2})\\
+f(1)h(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&=f(p(t))h(q(t))
+\end{align*}$$
+
+$$\begin{align*}
+(h\ast f)(t) &= \begin{cases}
+h(2t) & (0 \leq t \leq \frac{1}{2})\\
+f(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases} \\
+&= \begin{cases}
+h(2t)f(0) & (0 \leq t \leq \frac{1}{2})\\
+h(1)f(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&=f(q(t))h(p(t))
+\end{align*}$$
+
+と書ける。ここで、 $F_1: I\times I \to G, F_2: I\times I \to G$ を次のように定義する。
+
+$$\begin{align*}
+F_1(s, t) &= f((1-s)p(t) + st)h((1-s)q(t) + st)\\
+F_2(s, t) &= f((1-s)q(t) + st)h((1-s)p(t) + st)
+\end{align*}$$
+
+このとき、 $F_1:f*h \sim f\cdot h, F_2:h*f \sim f\cdot h$ である。
+したがって、 $f\ast h \sim f\cdot h \sim f \ast h$ を示せた。
+
+$[g_1], [g_2] \in \pi(G,e)$ を任意に取る。このとき
+$[g_1][g_2] = [g_1\ast g_2] = [g_2\ast g_1] = [g_2][g_1]$
+だから、 $\pi(G,e)$ は可換群である。さらに、
+
+$$\begin{align*}
+(f\ast \nu f)(t) &= \begin{cases}
+f(2t) & (0 \leq t \leq \frac{1}{2})\\
+f(2t-1)^{-1} & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+f(2t)f(0)^{-1} & (0 \leq t \leq \frac{1}{2})\\
+f(1)f(2t-1)^{-1} & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&=f(p(t))f(q(t))^{-1}\\
+\end{align*}$$
+
+である。ここで、 $F_3: I\times I \to G$ を次のように定義する。
+
+$$\begin{align*}
+F_3(t, s) = f((1-s)p(t))f((1-s)q(t))^{-1}
+\end{align*}$$
+
+これにより、 $F_3:f\ast \nu f \sim \epsilon_e$ である。
+したがって $\nu_{\ast}[f] = [f]^{-1}$ である。
+
+## (e)
 $S^1$ は明らかに乗法群である。
 また, $\mu, \nu$ は明らかに連続写像である。
 よって、(d) より $S^1$ は位相群である。

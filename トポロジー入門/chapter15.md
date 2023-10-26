@@ -424,3 +424,74 @@ $S^1$ は明らかに乗法群である。
 また, $\mu, \nu$ は明らかに連続写像である。
 よって、(d) より $S^1$ は位相群である。
 $1\in S^1$ が単位元だから、(d)より $\pi(S^1, 1)$ は可換群である。
+
+## (f)
+
+$a,b \in G$ に対して $ab = \mu(a,b)$ と書くことにする。
+
+また、 $p: I \to I, q: I \to I$ を次のように定義される連続写像とする。
+
+$$\begin{align*}
+p(t) = \begin{cases}
+2t & (0 \leq t \leq \frac{1}{2})\\
+1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+$$\begin{align*}
+q(t) = \begin{cases}
+0 & (0 \leq t \leq \frac{1}{2})\\
+2t-1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+ここで、
+
+$$\begin{align*}
+\mu((if)\ast(jg))(t) &= \begin{cases}
+\mu(f(2t), x_0) & (0 \leq t \leq \frac{1}{2})\\
+\mu(x_0, g(2t-1)) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+f(2t) & (0 \leq t \leq \frac{1}{2})\\
+g(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= (f\ast g)(t)
+\end{align*}$$
+
+よって、 $\mu((if)\ast(jg)) = f\ast g$ である。
+$[u],[v] \in \pi(X,x_0)$ とする。
+
+$$\begin{align*}
+(u\ast v)(t)&= \begin{cases}
+u(2t) & (0 \leq t \leq \frac{1}{2})\\
+v(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+u(2t)v(0) & (0 \leq t \leq \frac{1}{2})\\
+u(1)v(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= u(p(t))v(q(t))
+\end{align*}$$
+
+$$\begin{align*}
+(v\ast u)(t)&= \begin{cases}
+v(2t) & (0 \leq t \leq \frac{1}{2})\\
+u(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+u(0)v(2t) & (0 \leq t \leq \frac{1}{2})\\
+u(2t-1)v(1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= u(q(t))v(p(t))
+\end{align*}$$
+
+さらに、 $F: I\times I \to X$ を次のように定義する。
+
+$$\begin{align*}
+F(t, s) = u((1-s)p(t) + sq(t))v((1-s)q(t) + sp(t))
+\end{align*}$$
+
+これにより、 $F: u \ast v \sim v \ast u$ を得る。
+したがって、 $[u][v]=[v][u]$ である。
+これは、 $\pi(X,x_0)$ が可換群であることを意味する。

@@ -495,3 +495,116 @@ F(t, s) = u((1-s)p(t) + sq(t))v((1-s)q(t) + sp(t))
 これにより、 $F: u \ast v \sim v \ast u$ を得る。
 したがって、 $[u][v]=[v][u]$ である。
 これは、 $\pi(X,x_0)$ が可換群であることを意味する。
+
+## (g)
+$a,b \in G$ に対して $ab = \mu(a,b)$ と書くことにする。
+
+また、 $p: I \to I, q: I \to I$ を次のように定義される連続写像とする。
+
+$$\begin{align*}
+p(t) = \begin{cases}
+2t & (0 \leq t \leq \frac{1}{2})\\
+1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+$$\begin{align*}
+q(t) = \begin{cases}
+0 & (0 \leq t \leq \frac{1}{2})\\
+2t-1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+$[f], [g] \in \pi(X, x_0)$ とする。
+$h_1: I \to X, h_2: I \to X$ を次のように定義する。
+
+$$\begin{align*}
+h_1(t) &= f(p(t))g(q(t))\\
+h_2(t) &= f(q(t))g(p(t))
+\end{align*}$$
+
+このとき
+
+$$\begin{align*}
+h_1(t) &= \begin{cases}
+f(2t)g(0) &(0 \leq t \leq \frac{1}{2})\\
+f(1)g(2t-1) &(\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+f(2t)x_0 &(0 \leq t \leq \frac{1}{2})\\
+x_0 g(2t-1) &(\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+
+h_2(t) &= \begin{cases}
+f(0)g(2t) &(0 \leq t \leq \frac{1}{2})\\
+f(2t-1)g(1) &(\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+x_0 g(2t) &(0 \leq t \leq \frac{1}{2})\\
+f(2t-1)x_0 &(\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+また、 $F, G: X \times I \to X$ はそれぞれ、
+$\mu i\simeq (\rm{rel}\:x_0), \mu j\simeq (\rm{rel}\:x_0)$
+を与えるとする。
+
+さらに、 $H_1, H_2, H_3: I \times I \to X$ を次のように定義する。
+
+$$\begin{align*}
+H_1(t,s) &= \begin{cases}
+F(f(2t), s) & (0 \leq t \leq \frac{1}{2})\\
+F(g(2t-1), s) & (\frac{1}{2} \leq t \leq 1)\\
+\end{cases}\\
+
+H_2(t,s) &= \begin{cases}
+G(g(2t), s) & (0 \leq t \leq \frac{1}{2})\\
+F(f(2t-1), s) & (\frac{1}{2} \leq t \leq 1)\\
+\end{cases}\\
+
+H_3(t,s) &= f((1-s)p(t) + sq(t))g((1-s)q(t) + sp(t))
+\end{align*}$$
+
+このとき、 $H_1$ は $h_1 \sim f\ast g$ を与える。実際、
+
+$$\begin{align*}
+H_1(t, 0) &= \begin{cases}
+\mu if(2t) & (0 \leq t \leq \frac{1}{2})\\
+\mu jg(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+f(2t)x_0 &(0 \leq t \leq \frac{1}{2})\\
+x_0g(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&=h_1(t)\\
+H_1(t, 1) &= \begin{cases}
+f(2t) &(0 \leq t \leq \frac{1}{2})\\
+g(2t-1) &(\frac{1}{2} \leq t \leq 1)\\
+\end{cases}\\
+&=(f\ast g)(t)
+\end{align*}$$
+
+である。
+
+また、 $H_2$ は $h_2 \sim g\ast f$ を与える。実際、
+
+$$\begin{align*}
+H_2(t, 0) &= \begin{cases}
+\mu jg(2t) & (0 \leq t \leq \frac{1}{2})\\
+\mu if(2t-1) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+x_0g(2t) &(0 \leq t \leq \frac{1}{2})\\
+f(2t-1)x_0 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&=h_2(t)\\
+H_2(t, 1) &= \begin{cases}
+g(2t) &(0 \leq t \leq \frac{1}{2})\\
+f(2t-1) &(\frac{1}{2} \leq t \leq 1)\\
+\end{cases}\\
+&=(g\ast f)(t)
+\end{align*}$$
+
+最後に、 $H_3$ はあきらかに $h_1 \sim h_2$ を与える。
+以上より、 $f\ast g \sim g \ast f$ を示せた。
+これは、 $\pi(X,x_0)$ が可換群であることを意味する。

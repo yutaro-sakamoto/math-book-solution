@@ -104,3 +104,21 @@ d(x, y') &\leq d(x, y) + d(y, y')\\
 \end{align*}$$
 
 よって、 $y' \in B_\epsilon(x)$ である。これは $B_{\epsilon-\epsilon'}(y) \subset B_\epsilon(x)$ を意味する。
+
+## (b)
+開集合は、 $\lbrace |x| < 1 \rbrace, \lbrace x + y < 0\rbrace$ だけである。
+
+$\lbrace(x, y); x^2 + y^2 < 1\rbrace \cup \lbrace (1, 0) \rbrace$,
+$\lbrace(x, y); x^2 + y^2 \leq 1\rbrace$,
+$\lbrace(x, y); x + y \geq 0\rbrace$,
+$\lbrace(x, y); x + y = 0\rbrace$,
+
+はそれぞれ、集合
+$\lbrace(1,0)\rbrace$,
+$\lbrace(x, y); x^2 + y^2 = 1\rbrace$,
+$\lbrace(x, y); x + y = 0\rbrace$,
+$\lbrace(x, y); x + y = 0\rbrace$,
+
+に属する任意の要素を含む開集合はすべて、
+元の集合の補集合との共通部分が空集合ではない。
+したがって開集合ではない。

@@ -147,3 +147,7 @@ $x \in X$ を任意に取る。
 $X_\lambda$ は開集合であるから、ある $\epsilon > 0$ が存在して、 $B_\epsilon(x) \subset X_\lambda$ である。
 $X_\lambda \subset X$ であるから、 $B_\epsilon(x) \subset X$ である。
 よって、 $X$ は開集合である。
+
+## (d)
+任意の正整数 $n \in \mathbb{N}$ について、 $X_n = (-1/n, 1/n)$ とおく。
+このとき $\bigcap_{n \in \mathbb{n}}X_n = \lbrace 0\rbrace$ であり、これは開集合ではない。

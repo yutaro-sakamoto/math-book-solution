@@ -122,3 +122,28 @@ $\lbrace(x, y); x + y = 0\rbrace$,
 に属する任意の要素を含む開集合はすべて、
 元の集合の補集合との共通部分が空集合ではない。
 したがって開集合ではない。
+
+## (c)
+
+### (i)
+空集合の任意の元については、任意の性質が成立する。
+特に、空集合の任意の元xについて、「 $\epsilon_x > 0$ が存在し $B_{\epsilon_x} \subset A$ 」が成り立つ。よって $\phi \in \mathscr{F}$ が成り立つ。
+
+また $A$ の任意の元 $x$ と任意の $\epsilon > 0$ について、 $B_\epsilon(x) \subset A$ が成り立つ。よって $A \in \mathscr{F}$ が成り立つ。
+
+### (ii)
+$ X, Y \in \mathscr{F}$ とする。
+$a \in X \cap Y$ を任意に取る。
+このとき、ある $\epsilon_X > 0$ が存在して、 $B_{\epsilon_X}(a) \subset X$ である。
+また、ある $\epsilon_Y > 0$ が存在して、 $B_{\epsilon_Y}(a) \subset Y$ である。
+$\epsilon = \min(\epsilon_X, \epsilon_Y)$ とおくと、 $B_\epsilon(a) \subset X \cap Y$ である。
+よって、 $X \cap Y \in \mathscr{F}$ である。
+
+### (iii)
+$\lbrace X_\lambda \rbrace_{\lambda \in \Lambda}$ を $A$ の開集合からなる集合族とする。
+$X = \bigcup_{\lambda \in \Lambda} X_\lambda$ とおく。
+$x \in X$ を任意に取る。
+このとき、ある $\lambda \in \Lambda$ が存在して、 $x \in X_\lambda$ である。
+$X_\lambda$ は開集合であるから、ある $\epsilon > 0$ が存在して、 $B_\epsilon(x) \subset X_\lambda$ である。
+$X_\lambda \subset X$ であるから、 $B_\epsilon(x) \subset X$ である。
+よって、 $X$ は開集合である。

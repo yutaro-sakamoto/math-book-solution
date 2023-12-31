@@ -25,3 +25,18 @@ $A\neq\phi$ とする。 $a \in A$ を任意の元とする。
 $\lbrace x\in X | d(a, x) < 1 \rbrace= \lbrace a\rbrace \subset A$ だから、 $A$ は $(X, d)$ の開集合である。
 
 以上より、 離散位相を持つ $X$ は距離づけ可能である。
+
+## (b)
+
+$U_a = \lbrace x \in X | d(a, x) < d(a, b)/2\rbrace,$
+$U_b = \lbrace x \in X | d(b, x) < d(a, b)/2\rbrace$ と定義する。
+
+$U_a, U_b$ は明らかに開集合である。
+
+$d(a, a) = d(b, b) = 0 < d(a,b)/2$ より、$a \in U_a, b \in U_b$ である。
+
+$U_a \cap U_b \neq \phi$ と仮定する。
+$x \in U_a \cap U_b$ を任意に取る。
+$d(a, b) \leq d(a, x) + d(b, x) < d(a, b)/2 + d(a, b)/2 = d(a, b)$ より矛盾。
+したがって $U_a \cap U_b = \phi$ である。
+

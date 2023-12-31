@@ -33,7 +33,7 @@ $U_b = \lbrace x \in X | d(b, x) < d(a, b)/2\rbrace$ と定義する。
 
 $U_a, U_b$ は明らかに開集合である。
 
-$d(a, a) = d(b, b) = 0 < d(a,b)/2$ より、$a \in U_a, b \in U_b$ である。
+$d(a, a) = d(b, b) = 0 < d(a,b)/2$ より、 $a \in U_a, b \in U_b$ である。
 
 $U_a \cap U_b \neq \phi$ と仮定する。
 $x \in U_a \cap U_b$ を任意に取る。

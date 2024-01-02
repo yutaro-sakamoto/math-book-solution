@@ -22,4 +22,5 @@
   * [Chapter 13](トポロジー入門/chapter13.md)
   * [Chapter 14](トポロジー入門/chapter14.md)
   * [Chapter 15](トポロジー入門/chapter15.md)
+  * [Chapter 16](トポロジー入門/chapter16.md)
   * [Chapter 29](トポロジー入門/chapter29.md)

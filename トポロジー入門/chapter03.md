@@ -9,16 +9,16 @@ $f: X \to Y$ を $f(x) = x$ で定義する。
 
 ## (c)
 
-$B_\epsilon(x), B'_\epsilon(x)$ はそれぞれ、距離 $d_1, d_2$ に関する $x$ を中心とする開球を表すとする。
+$B^1_{\epsilon}(x), B^1_{\epsilon}(x)$ はそれぞれ、距離 $d_1, d_2$ に関する $x$ を中心とする開球を表すとする。
 
 $U$ を距離 $d_1$ による開集合とする。
-任意の $x \in U$ に対して、 $B_\epsilon(x) \subset U$ となる。
-このとき $B'_{\epsilon/M}(x) \subset U$ である。
+任意の $x \in U$ に対して、 $B^1_{\epsilon}(x) \subset U$ となる。
+このとき $B^2_{\epsilon/M}(x) \subset U$ である。
 したがって、 $U$ は距離 $d_2$ による位相空間における開集合である。
 
 $U$ を距離 $d_2$ による開集合とする。
-任意の $x \in U$ に対して、 $B'_\epsilon(x) \subset U$ となる。
-このとき $B_{m\epsilon}(x) \subset U$ である。
+任意の $x \in U$ に対して、 $B^2_{\epsilon}(x) \subset U$ となる。
+このとき $B^1_{m \epsilon}(x) \subset U$ である。
 したがって、 $U$ は距離 $d_1$ による位相空間における開集合である。
 
 以上より $d_1, d_2$から生じる位相空間は同じ。 したがって同相である。

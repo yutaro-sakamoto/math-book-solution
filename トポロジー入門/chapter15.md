@@ -208,6 +208,56 @@ H(1, s) &= (F(1, s), G(1, s))\\
 
 以上より、 $H$ により $f\thicksim g$ が与えられ、 $\pi(X\times Y, (x_0, y_0)) =\lbrace 1\rbrace$ である。
 
+## (b)
+$p: I \to I, q: I \to I$ を次のように定義される連続写像とする。
+
+$$\begin{align*}
+p(t) = \begin{cases}
+2t & (0 \leq t \leq \frac{1}{2})\\
+1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+$$\begin{align*}
+q(t) = \begin{cases}
+0 & (0 \leq t \leq \frac{1}{2})\\
+2t-1 & (\frac{1}{2} \leq t \leq 1)
+\end{cases}
+\end{align*}$$
+
+ここで、
+
+$$\begin{align*}
+(if)\ast(jg)(t) &= \begin{cases}
+(f(2t), y_0) & (0 \leq t \leq \frac{1}{2})\\
+(x_0, g(2t-1)) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+(f(2t), g(0)) & (0 \leq t \leq \frac{1}{2})\\
+(f(1), g(2t-1)) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&=f(p(t))g(q(t))
+\end{align*}$$
+
+$$\begin{align*}
+(jg)\ast(if)(t) &= \begin{cases}
+(x_0, g(2t-1)) & (0 \leq t \leq \frac{1}{2})\\
+(f(2t), y_0) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+(f(0), g(2t-1)) & (0 \leq t \leq \frac{1}{2})\\
+(f(2t), g(1)) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&=f(q(t))g(p(t))
+\end{align*}$$
+
+である。また、 $F:I \times I \to X \times Y$ を次のように定義する。
+
+$$\begin{align*}
+F(t, s) = (f((1-s)p(t) + sq(t)), g((1-s)q(t) + sp(t)))
+\end{align*}$$
+
+これにより、 $F : (if)\ast(jg) \sim (jg)\ast(if)$ を得る。
 ## (d)
 
 $a,b \in G$ に対して $ab = \mu(a,b), a^{-1}=\nu(a)$ と書くことにする。

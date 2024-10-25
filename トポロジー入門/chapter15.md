@@ -258,6 +258,87 @@ F(t, s) = (f((1-s)p(t) + sq(t)), g((1-s)q(t) + sp(t)))
 \end{align*}$$
 
 これにより、 $F : (if)\ast(jg) \sim (jg)\ast(if)$ を得る。
+
+## (c)
+$k_X :X \times Y \to X, k_Y:X \times Y \to Y$ を次のように定義する。
+
+$$\begin{align*}
+k_X(x, y) = x\\
+k_Y(x, y) = y
+\end{align*}$$
+
+また、 $p, q$ を (b) と同様に定義する。
+
+$F: \pi(X, x_0) \times \pi(Y, y_0) \to \pi(X \times X, (x_0, y_0)),$
+$G: \pi(X \times X, (x_0, y_0)) \to \pi(X, x_0) \times \pi(Y, y_0)$
+を次のように定義する。
+
+$$\begin{align*}
+F([f], [g]) &= [(if) \ast (jg)]\\
+G([h]) &= ([k_Xh], [k_Yh])
+\end{align*}$$
+
+まず(b)の結果を用いて、 $F$ が準同型写像であることを示す。
+
+$$\begin{align*}
+F([f_1], [g_1])F([f_2], [g_2]) &= [(if_1) \ast (jg_1)][(if_2) \ast (jg_2)]\\
+&= [(if_1) \ast (jg_1) \ast (if_2) \ast (jg_2)]\\
+&= [(if_1) \ast (if_2) \ast (jg_1) \ast (jg_2)]\\
+&= [(i(f_1\ast f_2)) \ast (j(g_1\ast g_2))]\\
+&= F([f_1 \ast f_2], [g_1 \ast g_2])\\
+&= F(([f_1], [g_1])([f_2], [g_2]))
+\end{align*}$$
+
+よって、 $F$ は準同型写像である。
+
+$F$ が全単射写像であることを示すために、 $F, G$ が互いに逆写像であることを示す。
+
+$$\begin{align*}
+FG([h]) &= F([k_Xh], [k_Yh])\\
+&= [(ik_Xh) \ast (jk_Yh)]\
+\end{align*}$$
+
+$$\begin{align*}
+(ik_Xh) \ast (jk_Yh)(t) &= \begin{cases}
+(k_Xh(2t), y_0) & (0 \leq t \leq \frac{1}{2})\\
+(x_0, k_Yh(2t-1)) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= \begin{cases}
+(k_Xh(2t), k_Yf(0)) & (0 \leq t \leq \frac{1}{2})\\
+(k_Xf(1), k_Yh(2t-1)) & (\frac{1}{2} \leq t \leq 1)
+\end{cases}\\
+&= (k_Xhp(t), k_Yhq(t))\\
+\end{align*}$$
+
+ここで、 $H : I \times I \to X \times Y$ を次のように定義する。
+
+$$\begin{align*}
+H(t,s) = (k_Xh((1-s)p(t) + st), k_Yh((1-s)q(t) + st))
+\end{align*}$$
+
+このとき
+
+$$\begin{align*}
+H(t, 0) &= (k_Xhp(t), k_Yhq(t))\\
+&= (ik_Xh \ast jk_Yh)(t)\\
+H(t, 1) &= (k_Xh(t), k_Yh(t))\\
+&= h(t)
+\end{align*}$$
+
+を得る。したがって、 $H : (ik_Xh) \ast (jk_Yh) \sim h$ である。
+$FG([h])=[(ik_Xh) \ast (jk_Yh)]$ であったから、 $FG([h])=[h]$ である。
+
+さらに、 $GF([f], [g])$ を計算する。
+
+$$\begin{align*}
+GF([f], [g]) &= G([(if) \ast (jg)])\\
+&= ([k_X(if \ast jg)], [k_Y(if \ast jg)])\\
+&= ([k_Xif \ast k_Xjg], [k_Yif \ast k_Yjg])\\
+&= ([f \ast \epsilon_{(x_0, y_0)}], [\epsilon_{(x_0, y_0)} \ast g])\\
+&= ([f], [g])
+\end{align*}$$
+
+以上より、 $F$ は全単射写像。したがって、 $F$ は群の同型写像である。
 ## (d)
 
 $a,b \in G$ に対して $ab = \mu(a,b), a^{-1}=\nu(a)$ と書くことにする。

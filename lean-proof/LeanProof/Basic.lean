@@ -4,6 +4,7 @@ import Mathlib.Data.Set.Basic
 import Mathlib.Data.Real.Basic
 import Mathlib.Tactic.Linarith
 import Mathlib.Data.Real.Archimedean
+import Mathlib.Topology.MetricSpace.Basic
 
 def hello := "world"
 
@@ -23,11 +24,25 @@ def open_interval (a b : ℝ) : Set ℝ := {x | a < x ∧ x < b}
 def X (n : ℕ+) : Set ℝ := open_interval (-(1 : ℝ) / n.val) ((1 : ℝ) / n.val)
 
 -- 実数の位相空間構造を想定する（実際にはMathlibで定義されている）
-variable [TopologicalSpace ℝ]
+variable [MetricSpace ℝ]
+
+universe u
+
+lemma mem_set_of {α : Type u} {p : α → Prop} {x : α} : x ∈ { z | p z } → p x := by simp
 
 -- 各X_nが開集合であることを宣言
 -- 実際の証明には実数の標準的距離位相での開区間が開集合であることが必要
-axiom X_is_open (n : ℕ+) : IsOpen (X n)
+theorem X_is_open (n : ℕ+) : IsOpen (X n) := by
+    simp [X, open_interval, IsOpen]
+    intro x
+    intro hx
+    have h:= mem_set_of hx
+    have h1 : -(1 : ℝ) / n.val < x := h.1
+    have h2 : x < (↑↑n)⁻¹ := h.2
+    let ε := min (dist x (-(1 : ℝ) / n.val)) (dist ((1 : ℝ) / n.val) x)
+    let r := ε / 2
+    sorry
+
 
 -- すべてのX_nの交わりが{0}であることを証明
 theorem intersection_eq_singleton_zero :
@@ -97,9 +112,9 @@ theorem intersection_eq_singleton_zero :
     · -- 0 < 1/n
       exact div_pos one_pos (Nat.cast_pos.mpr n.pos)
 
--- {0}は開集合ではないことを宣言
--- 実際の証明には距離位相での性質が必要
-axiom singleton_zero_not_open : ¬IsOpen ({0} : Set ℝ)
+-- {0}は開集合ではないことの証明
+theorem singleton_zero_not_open_theorem : ¬IsOpen ({0} : Set ℝ) := by
+  sorry
 
 -- メインの定理：開集合の可算無限個の交わりが開集合でない例
 theorem countable_intersection_of_open_sets_not_open :
@@ -108,7 +123,7 @@ theorem countable_intersection_of_open_sets_not_open :
   constructor
   · exact X_is_open
   · rw [intersection_eq_singleton_zero]
-    exact singleton_zero_not_open
+    exact singleton_zero_not_open_theorem
 
 -- 補足説明とドキュメント
 /-

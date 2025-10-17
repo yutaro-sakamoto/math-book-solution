@@ -88,3 +88,17 @@ theorem intersection_eq_singleton_zero :
       exact div_pos one_pos (Nat.cast_pos.mpr n.pos)
     · -- 0 < 1/n
       exact div_pos one_pos (Nat.cast_pos.mpr n.pos)
+
+
+-- {0}は開集合ではないことの証明
+theorem singleton_zero_not_open_theorem : ¬IsOpen ({0} : Set ℝ) := by
+  sorry
+
+-- メインの定理：開集合の可算無限個の交わりが開集合でない例
+theorem countable_intersection_of_open_sets_not_open :
+  (∀ n : ℕ+, IsOpen (X n)) ∧
+  ¬IsOpen (⋂ n : ℕ+, X n) := by
+  constructor
+  · exact X_is_open
+  · rw [intersection_eq_singleton_zero]
+    exact singleton_zero_not_open_theorem

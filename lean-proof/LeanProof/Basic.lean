@@ -102,3 +102,8 @@ theorem countable_intersection_of_open_sets_not_open :
   · exact X_is_open
   · rw [intersection_eq_singleton_zero]
     exact singleton_zero_not_open_theorem
+
+#check X
+#check intersection_eq_singleton_zero
+#check countable_intersection_of_open_sets_not_open
+
